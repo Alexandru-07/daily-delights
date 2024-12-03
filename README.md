@@ -2,4 +2,7 @@
 
 _CONTENT_
 
-Empty...
+- Homepage
+- Shop
+- Product
+- About

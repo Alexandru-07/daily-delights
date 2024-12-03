@@ -49,8 +49,31 @@ body {
 
 /* SECTION 1 */
 
+.section-f1-element {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 110px;
+}
+
+.section-heading-image {
+  margin-right: 70px;
+}
+
+.section-heading-image img {
+  width: 900px;
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: 8px 8px 10px black;
+}
+
+.section-heading-image:hover {
+  scale: 1.05;
+  transition: all 0.7s ease;
+}
+
 .section-heading-default {
   width: 600px;
+  margin-left: 70px;
   margin-top: 100px;
 }
 
@@ -62,6 +85,7 @@ body {
 .section-heading-content p {
   margin-top: 20px;
   font-size: 25px;
+  line-height: 35px;
 }
 .section-heading-button {
   margin-top: 30px;
@@ -89,34 +113,79 @@ body {
 
 /* SECTION 2 */
 
-.section-presenting-inner {
-  position: absolute;
-  top: 25%;
-  right: 25%;
-  z-index: 0;
+.section-f2-element {
+  margin-top: 140px;
 }
 
-.section-presenting-inner-2 {
-  position: absolute;
-  top: 20%;
-  right: 2%;
-  z-index: -1;
+.section-f2-title h1 {
+  font-size: 50px;
+  margin: 0;
 }
 
-.section-presenting-inner h2 {
-  position: absolute;
-  top: 80%;
-  right: -10%;
-  font-size: 45px;
-  letter-spacing: 5px;
+.section-f2-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 100px;
 }
 
-.section-presenting-inner-img-1 {
-  width: 700px;
-  height: 700px;
+.section-f2-card {
+  font-size: 20px;
+  background-color: #f3f3f3;
+  padding: 10px 25px;
+  border-radius: 70px;
+  box-shadow: 10px 10px 10px black;
 }
 
-.section-presenting-inner-img-2 {
-  width: 800px;
-  height: 600px;
+.section-f2-card-1 img {
+  width: 400px;
+  height: 400px;
+}
+
+.section-f2-card-2 img {
+  width: 400px;
+  height: 400px;
+}
+
+.section-f2-card-3 img {
+  width: 400px;
+  height: 400px;
+}
+
+.section-f2-card h3 {
+  text-align: center;
+  width: auto;
+}
+
+.section-f2-card p {
+  width: 400px;
+  height: 220px;
+  line-height: 25px;
+}
+
+/* SECTION 3 */
+
+.section-f3-element {
+  margin-top: 140px;
+}
+
+.section-f3-title h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.section-f2-card-button-ctn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.section-f2-card-btn {
+  width: 200px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
