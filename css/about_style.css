@@ -49,6 +49,35 @@ body {
 
 /* SECTION 1 */
 
+.home-button {
+  position: fixed;
+  right: 0.5%;
+  bottom: 2%;
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid white;
+}
+.home-button:hover {
+  box-shadow: 0 0 15px black;
+  scale: 1.1;
+  transition: all 0.7s ease;
+  rotate: 360deg;
+}
+.home-button a {
+  margin: 0;
+  font-size: 30px;
+  text-decoration: none;
+  height: 27px;
+  color: white;
+}
+
 .section-a-element {
   margin-top: 120px;
 }
@@ -58,6 +87,37 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+}
+
+.section-a-heading-logo-ctn {
+  display: flex;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.section-a-heading-logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.section-a-nextjs img {
+  width: 75px;
+  height: 60px;
+}
+
+.section-a-types img {
+  width: 70px;
+  height: 60px;
+}
+
+.section-a-heading-logo h3 {
+  margin: 0 0 15px 0;
+}
+
+.section-a-heading-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-a-heading {
@@ -83,7 +143,7 @@ body {
 }
 
 .section-a-img img {
-  width: 600px;
+  width: 500px;
   height: 600px;
   border-radius: 10px;
   box-shadow: 0 0 20px black;
@@ -92,7 +152,7 @@ body {
 /* CONTACT SECTION */
 
 .section-about-contact {
-  margin-top: 300px;
+  margin-top: 200px;
   background-color: black;
   height: 100px;
   display: flex;
@@ -108,10 +168,11 @@ body {
 /* SECTION 2 */
 
 .section-a-contact-heading {
-  margin-top: 300px;
+  height: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .section-a-contact-heading h1 {
@@ -122,13 +183,32 @@ body {
 .section-a-form-name {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  justify-content: space-between;
 }
 
 .section-a-form {
   width: 800px;
-  height: 400px;
+  height: 600px;
   background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.section-a-form-fname {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-a-form-lname {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-a-form-fname h3 {
@@ -142,11 +222,21 @@ body {
 .section-a-form-fname input {
   border: none;
   padding: 10px 10px;
+  width: 250px;
+  border-radius: 10px;
 }
 
 .section-a-form-lname input {
   border: none;
   padding: 10px 10px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.section-a-form-email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-a-form-email h3 {
@@ -156,14 +246,113 @@ body {
 .section-a-form-email input {
   border: none;
   padding: 10px 10px;
+  width: 500px;
+  border-radius: 10px;
+  border: none;
+}
+
+.section-a-form-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-a-form-message h3 {
   font-size: 15px;
 }
 
-.section-a-form-message input {
+.section-a-textarea {
   width: 400px;
   height: 200px;
+  resize: none;
+  border-radius: 10px;
+  padding: 5px 5px;
   border: none;
+}
+
+.section-f-wrapper {
+  margin: 0 50px 0 50px;
+}
+
+.section-a-form-button-ctn {
+  display: flex;
+  justify-content: center;
+}
+
+.section-a-form-button-ctn button {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+}
+
+/* SECTION 3 */
+
+.footer-f-wrapper {
+  margin: 0 100px 0 100px;
+}
+
+.footer-a-container {
+  background-color: black;
+  height: 150px;
+}
+
+.footer-a-inner {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.footer-a-content-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-a-content-heading h1 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.footer-a-content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+}
+
+.footer-a-content-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-a-content-logo img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.footer-a-content-center {
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer-a-content-center h3 {
+  margin: 0;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.footer-a-content-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer-a-content-right h3 {
+  color: white;
+  margin: 0;
 }

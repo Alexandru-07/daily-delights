@@ -14,7 +14,10 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body id="bdy">
+    <div class="home-button">
+      <a href="#bdy">^</a>
+    </div>
     <nav class="navbar-element">
       <div class="navbar-default card-wrapper">
         <div class="navbar-left">
@@ -41,7 +44,7 @@
       <div class="section-a-content card-wrapper">
         <div class="section-a-heading">
           <h1>About</h1>
-          <h3>Anghel Alexandru - Hyptr0nic</h3>
+          <h3>Anghel Alexandru - Web Developer</h3>
           <h4>A young developer with a fresh perspective.</h4>
           <p>
             With a great desire to discover this new field of "Web development",
@@ -55,9 +58,41 @@
             my ambition to understand, invent new things and ideas and to bring
             satisfaction to any new project I have.
           </p>
+
+          <div class="section-a-heading-logo-ctn">
+            <div class="section-a-heading-logo">
+              <h3>HTML</h3>
+              <img src="../assets/html.png" />
+            </div>
+
+            <div class="section-a-heading-logo">
+              <h3>CSS</h3>
+              <img src="../assets/css.png" />
+            </div>
+
+            <div class="section-a-heading-logo">
+              <h3>JS</h3>
+              <img src="../assets/js.png" />
+            </div>
+
+            <div class="section-a-heading-logo section-a-react">
+              <h3>React</h3>
+              <img src="../assets/react.png" />
+            </div>
+
+            <div class="section-a-heading-logo section-a-nextjs">
+              <h3>NextJs</h3>
+              <img src="../assets/nextjs.png" />
+            </div>
+
+            <div class="section-a-heading-logo section-a-types">
+              <h3>Typescript</h3>
+              <img src="../assets/typescript.png" />
+            </div>
+          </div>
         </div>
         <div class="section-a-img">
-          <img src="../assets/ProfileImg.jpg" alt="Profile image" />
+          <img src="../assets/profileimg2.jpg" alt="Profile image" />
         </div>
       </div>
     </section>
@@ -66,12 +101,12 @@
       <h1>CONTACT SECTION</h1>
     </section>
 
-    <section class="section-a-contact">
+    <section class="section-a-contact" id="sec_ctn">
       <div class="section-a-contact-heading card-wrapper">
         <h1>Contact</h1>
 
         <div class="section-a-form">
-          <div class="section-a-form-name">
+          <div class="section-a-form-name section-f-wrapper">
             <div class="section-a-form-fname">
               <h3>First name</h3>
               <input type="text" name="First name" placeholder="Jane" />
@@ -83,7 +118,7 @@
             </div>
           </div>
 
-          <div class="section-a-form-email">
+          <div class="section-a-form-email section-f-wrapper">
             <h3>Email</h3>
             <input
               type="email"
@@ -92,17 +127,48 @@
             />
           </div>
 
-          <div class="section-a-form-message">
+          <div class="section-a-form-message section-f-wrapper">
             <h3>Message</h3>
-            <input
-              type="text"
-              name="Message"
+            <textarea
+              class="section-a-textarea section-f-wrapper"
               placeholder="Enter your question or message"
-            />
+              maxlength="5000"
+            ></textarea>
+          </div>
+
+          <div class="section-a-form-button-ctn section-f-wrapper">
+            <button type="submit" name="Send information">SEND</button>
           </div>
         </div>
       </div>
     </section>
+
+    <footer class="footer-a-element">
+      <div class="footer-a-container">
+        <div class="footer-a-inner footer-f-wrapper">
+          <div class="footer-a-content-left">
+            <div class="footer-a-content-heading">
+              <h1>Daily Delights</h1>
+            </div>
+            <div class="footer-a-content-logo">
+              <img src="../assets/facebook.png" alt="Facebook logo button" />
+              <img src="../assets/linkedin.png" alt="Linkedin logo button" />
+              <img src="../assets/youtube.png" alt="Youtube logo button" />
+              <img src="../assets/instagram.png" alt="Instagram logo button" />
+            </div>
+          </div>
+
+          <div class="footer-a-content-center">
+            <h3>Copyright 2024 © Anghel Alexandru</h3>
+          </div>
+          <div class="footer-a-content-right">
+            <h3>Thank you for your time!</h3>
+            <h3>0768066599</h3>
+            <h3>alex.alexandru86@yahoo.ro</h3>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="../js/script.js" async defer></script>
   </body>
 </html>
