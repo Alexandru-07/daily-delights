@@ -109,18 +109,29 @@
           <div class="section-a-form-name section-f-wrapper">
             <div class="section-a-form-fname">
               <h3>First name</h3>
-              <input type="text" name="First name" placeholder="Jane" />
+              <input
+                id="fname"
+                type="text"
+                name="First name"
+                placeholder="Jane"
+              />
             </div>
 
             <div class="section-a-form-lname">
               <h3>Last name</h3>
-              <input type="text" name="Last name" placeholder="Smith" />
+              <input
+                id="lname"
+                type="text"
+                name="Last name"
+                placeholder="Smith"
+              />
             </div>
           </div>
 
           <div class="section-a-form-email section-f-wrapper">
             <h3>Email</h3>
             <input
+              id="fmail"
               type="email"
               name="Email"
               placeholder="email@janesmith.com"
@@ -130,6 +141,7 @@
           <div class="section-a-form-message section-f-wrapper">
             <h3>Message</h3>
             <textarea
+              id="fmessage"
               class="section-a-textarea section-f-wrapper"
               placeholder="Enter your question or message"
               maxlength="5000"
@@ -137,7 +149,9 @@
           </div>
 
           <div class="section-a-form-button-ctn section-f-wrapper">
-            <button type="submit" name="Send information">SEND</button>
+            <button onclick="getInfo()" type="submit" name="Send information">
+              SEND
+            </button>
           </div>
         </div>
       </div>

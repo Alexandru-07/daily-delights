@@ -1,0 +1,19 @@
+.confirm-default {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.confirm-default h1 {
+  font-size: 35px;
+}
+
+.confirm-default h3 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.confirm-default h4 {
+  text-align: center;
+}

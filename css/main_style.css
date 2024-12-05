@@ -217,3 +217,74 @@ body {
   border-radius: 10px;
   cursor: pointer;
 }
+
+/* FOOTER */
+
+.footer-f-wrapper {
+  margin: 0 100px 0 100px;
+}
+
+.footer-a-container {
+  background-color: black;
+  height: 150px;
+  margin-top: 100px;
+}
+
+.footer-a-inner {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.footer-a-content-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-a-content-heading h1 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.footer-a-content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+}
+
+.footer-a-content-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-a-content-logo img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.footer-a-content-center {
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer-a-content-center h3 {
+  margin: 0;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.footer-a-content-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer-a-content-right h3 {
+  color: white;
+  margin: 0;
+}
