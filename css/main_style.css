@@ -1,5 +1,6 @@
 * {
   font-family: "Inter", sans-serif;
+  user-select: none;
 }
 
 body {
@@ -47,6 +48,10 @@ body {
   color: white;
 }
 
+.navbar-responsive {
+  display: none;
+}
+
 /* SECTION 1 */
 
 .home-button {
@@ -63,20 +68,10 @@ body {
   align-items: center;
   cursor: pointer;
   border: 2px solid white;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
-.home-button:hover {
-  box-shadow: 0 0 15px black;
-  scale: 1.1;
-  transition: all 0.7s ease;
-  rotate: 360deg;
-}
-.home-button a {
-  margin: 0;
-  font-size: 30px;
-  text-decoration: none;
-  height: 27px;
-  color: white;
-}
+
 .section-f1-element {
   display: flex;
   justify-content: space-between;
@@ -298,21 +293,42 @@ body {
   }
   /* END */
 
-  /* SECTION 1 */
-
-  .home-button {
-    display: none;
+  /* RESPONSIVE-NAVBAR */
+  .navbar-responsive {
+    display: block;
   }
+
+  .navbar-responsive-default {
+    background-color: black;
+    color: white;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px black;
+  }
+
+  .navbar-responsive-default h1 {
+    margin: 0;
+  }
+
+  /* END */
+
+  /* SECTION 1 */
 
   .section-f1-element {
     flex-direction: column;
     margin-top: 20px;
+    align-items: center;
   }
 
   .section-heading-default {
     margin-left: 0;
-    width: 400px;
+    width: 350px;
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .section-heading-title h1 {
@@ -323,10 +339,17 @@ body {
     margin-top: 0;
   }
 
+  .section-heading-image {
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+  }
+
   .section-heading-image img {
     width: 350px;
     height: 250px;
     margin-top: 50px;
+    box-shadow: none;
   }
   /* END */
 
@@ -347,6 +370,8 @@ body {
 
   .section-f2-title {
     margin: 0;
+    width: 300px;
+    text-align: center;
   }
 
   .section-f2-title h1 {
@@ -358,13 +383,10 @@ body {
   }
 
   .section-f2-card img {
-    width: auto;
+    width: 280px;
     height: 300px;
   }
 
-  .section-f2-card-2 img {
-    width: 300px;
-  }
   .section-f2-card p {
     font-size: 14px;
     width: auto;

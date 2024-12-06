@@ -19,3 +19,16 @@ function getInfo() {
     window.location.href = "../html/confirm.html";
   }
 }
+
+const homeButton = document.getElementById("home_button");
+
+function goUp() {
+  window.location.href = "../html/main.html#bdy";
+
+  homeButton.style.boxShadow = "0 0 20px black";
+  homeButton.style.transition = "all 0.7s ease";
+
+  setTimeout(() => {
+    homeButton.style.boxShadow = "none";
+  }, 1500);
+}
