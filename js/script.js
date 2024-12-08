@@ -32,3 +32,48 @@ function goUp() {
     homeButton.style.boxShadow = "none";
   }, 1500);
 }
+
+let responsiveNavBool = false;
+const responsiveNavbar = document.getElementById("navbar_responsive_inner");
+function mainControlResponsive() {
+  if (!responsiveNavBool) {
+    responsiveNavbar.style.display = "block";
+    responsiveNavBool = true;
+  } else {
+    responsiveNavbar.style.display = "none";
+    responsiveNavBool = false;
+  }
+}
+
+const mainCardCtn = document.getElementsByClassName("section-f2-card");
+const allElements = document.querySelectorAll("body");
+const mainCardBtn = document.getElementsByClassName("section-f2-card-btn");
+function lightMode() {
+  document.querySelector("body").style.backgroundColor = "white";
+  allElements.forEach((element) => {
+    element.style.color = "black";
+  });
+  for (let i = 0; i < mainCardCtn.length; i++) {
+    mainCardCtn[i].style.backgroundColor = "#f3f3f3";
+    mainCardCtn[i].style.boxShadow = "0 0 10px black";
+  }
+  for (let i = 0; i < mainCardBtn.length; i++) {
+    mainCardBtn[i].style.backgroundColor = "black";
+    mainCardBtn[i].style.color = "white";
+  }
+}
+
+function darkMode() {
+  document.querySelector("body").style.backgroundColor = "#171718";
+  allElements.forEach((element) => {
+    element.style.color = "white";
+  });
+  for (let i = 0; i < mainCardCtn.length; i++) {
+    mainCardCtn[i].style.backgroundColor = "black";
+    mainCardCtn[i].style.boxShadow = "0 0 10px white";
+  }
+  for (let i = 0; i < mainCardBtn.length; i++) {
+    mainCardBtn[i].style.backgroundColor = "white";
+    mainCardBtn[i].style.color = "black";
+  }
+}

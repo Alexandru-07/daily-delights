@@ -25,18 +25,10 @@
           <h1>Daily Delights</h1>
         </div>
         <div class="navbar-right">
-          <a href="main.html" type="button" class="navbar-right-button nrbm"
-            >Home</a
-          >
-          <a href="shop.html" type="button" class="navbar-right-button nrbs"
-            >Shop</a
-          >
-          <a href="product.html" type="button" class="navbar-right-button nrbp"
-            >Product</a
-          >
-          <a href="about.html" type="button" class="navbar-right-button nrba"
-            >About</a
-          >
+          <a href="main.html" class="navbar-right-button nrbm">Home</a>
+          <a href="shop.html" class="navbar-right-button nrbs">Shop</a>
+          <a href="product.html" class="navbar-right-button nrbp">Product</a>
+          <a href="about.html" class="navbar-right-button nrba">About</a>
         </div>
       </div>
     </nav>
@@ -44,8 +36,31 @@
     <!-- RESPONSIVE NAVBAR -->
     <nav class="navbar-responsive">
       <div class="navbar-responsive-default">
+        <div onclick="lightMode()" class="navbar-responsive-inner-logo">
+          <img src="../assets/sun.png" alt="Light mode" />
+        </div>
+
         <div class="navbar-responsive-heading">
-          <h1>Daily Delights</h1>
+          <h1 onclick="mainControlResponsive()">Daily Delights</h1>
+        </div>
+
+        <div
+          onclick="darkMode()"
+          class="navbar-responsive-inner-logo navbar-responsive-inner-right"
+        >
+          <img src="../assets/moon.png" alt="Dark mode" />
+        </div>
+      </div>
+      <!-- SUB NAVBAR -->
+      <div id="navbar_responsive_inner" class="navbar-responsive-inner">
+        <div class="navbar-responsive-inner-link">
+          <a href="shop.html" class="navbar-responsive-inner-link-btn">Shop</a>
+          <a href="product.html" class="navbar-responsive-inner-link-btn"
+            >Product</a
+          >
+          <a href="about.html" class="navbar-responsive-inner-link-btn"
+            >About</a
+          >
         </div>
       </div>
     </nav>
@@ -161,6 +176,6 @@
         </div>
       </div>
     </footer>
-    <script src="../js/script.js"></script>
+    <script src="../js/script.js" defer></script>
   </body>
 </html>
