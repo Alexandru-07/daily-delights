@@ -1,5 +1,6 @@
 * {
   font-family: "Inter", sans-serif;
+  user-select: none;
 }
 
 body {
@@ -56,24 +57,17 @@ body {
   align-items: center;
   cursor: pointer;
   border: 2px solid white;
-}
-.home-button:hover {
-  box-shadow: 0 0 15px black;
-  scale: 1.1;
-  transition: all 0.7s ease;
-  rotate: 360deg;
-}
-.home-button a {
-  margin: 0;
-  font-size: 30px;
-  text-decoration: none;
-  height: 27px;
-  color: white;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .nrbs {
   background-color: black;
   color: white;
+}
+
+.navbar-responsive {
+  display: none;
 }
 
 .section-s-heading {
@@ -325,4 +319,217 @@ body {
 .footer-a-content-right h3 {
   color: white;
   margin: 0;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 600px) {
+  /* NAVBAR */
+  .navbar-default {
+    display: none;
+  }
+  /* END */
+
+  /* RESPONSIVE-NAVBAR */
+  .navbar-responsive {
+    display: block;
+  }
+
+  .navbar-responsive-default {
+    background-color: black;
+    color: white;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px black;
+  }
+
+  .navbar-responsive-default h1 {
+    margin: 0;
+  }
+
+  .navbar-responsive-inner-logo {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .navbar-responsive-inner-logo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* END */
+
+  /* NAVBAR INNER */
+
+  .navbar-responsive-inner {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    display: none;
+  }
+
+  .navbar-responsive-inner-link {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .navbar-responsive-inner-link-btn {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 6px 10px;
+    border-radius: 20px 10px;
+    box-shadow: 0 0 5px white;
+  }
+  /* END */
+
+  /* SECTION 1 / HEADING */
+
+  .section-s-element {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .section-s-heading {
+    margin-top: 50px;
+  }
+
+  .section-s-content {
+    box-shadow: 0 0 10px black;
+    width: 350px;
+    height: 500px;
+  }
+
+  .section-s-inner {
+    text-align: center;
+  }
+
+  .card-wrapper {
+    margin: 0;
+  }
+
+  .section-s-content:hover {
+    scale: 1;
+  }
+
+  /* END */
+
+  /* SECTION 2 */
+
+  .section-products {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .section-product-heading {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-product-ctc-1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    gap: 40px;
+  }
+
+  .section-product-ctc-1-reverse {
+    flex-direction: column;
+    margin-top: 0;
+    gap: 40px;
+  }
+
+  .section-product-ctc-1-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .section-product-ctc-1-left h1,
+  p {
+    margin: 0;
+  }
+
+  .section-product-ctc-1-left p {
+    width: 350px;
+    text-align: center;
+  }
+
+  /* END */
+
+  /* SECTION 2 */
+  .section-products-2 {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .section-product-2-left {
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .section-product-2-left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .section-product-2-left-content h1 {
+    font-size: 35px;
+  }
+
+  .section-product-2-left-content h1,
+  p,
+  h3 {
+    margin: 0;
+  }
+
+  .section-product-2-left-content p {
+    width: 350px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .section-product-2-left img {
+    width: 350px;
+    height: 450px;
+  }
+
+  .section-product-2-right-up {
+    flex-direction: column;
+  }
+
+  .section-product-2-right-down {
+    flex-direction: column;
+  }
+
+  .section-product-ctc-1-right img {
+    width: 350px;
+    height: 300px;
+    box-shadow: 0 0 10px black;
+  }
+
+  /* END */
+
+  /* FOOTER */
+
+  .footer-a-element {
+    display: none;
+  }
+
+  .footer-a-inner {
+    margin: 0;
+  }
 }

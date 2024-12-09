@@ -23,7 +23,11 @@ function getInfo() {
 const homeButton = document.getElementById("home_button");
 
 function goUp() {
-  window.location.href = "../html/main.html#bdy";
+  if (window.location.pathname.endsWith("main.html")) {
+    window.location.href = "../html/main.html#bdy";
+  } else if (window.location.pathname.endsWith("shop.html")) {
+    window.location.href = "../html/shop.html#bdy";
+  }
 
   homeButton.style.boxShadow = "0 0 20px black";
   homeButton.style.transition = "all 0.7s ease";
