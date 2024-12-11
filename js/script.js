@@ -27,6 +27,8 @@ function goUp() {
     window.location.href = "../html/main.html#bdy";
   } else if (window.location.pathname.endsWith("shop.html")) {
     window.location.href = "../html/shop.html#bdy";
+  } else if (window.location.pathname.endsWith("about.html")) {
+    window.location.href = "../html/about.html#bdy";
   }
 
   homeButton.style.boxShadow = "0 0 20px black";
