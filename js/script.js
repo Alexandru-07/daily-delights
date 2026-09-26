@@ -23,8 +23,8 @@ function getInfo() {
 const homeButton = document.getElementById("home_button");
 
 function goUp() {
-  if (window.location.pathname.endsWith("main.html")) {
-    window.location.href = "../main.html#bdy";
+  if (window.location.pathname.endsWith("index.html")) {
+    window.location.href = "../index.html#bdy";
   } else if (window.location.pathname.endsWith("shop.html")) {
     window.location.href = "../shop.html#bdy";
   } else if (window.location.pathname.endsWith("about.html")) {
