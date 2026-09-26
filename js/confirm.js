@@ -6,6 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setTimeout(() => {
     clearInterval(theTimer);
-    window.location.href = "../html/main.html";
+    window.location.href = "../main.html";
   }, 5000);
 });
